@@ -7,7 +7,7 @@ if proceeds > costs:
     print(f"Рентабельность фирмы: {profitability:.2f}")
     workers = int(input("Введите кол-во сотрудников фирмы: "))
     profit_per_worker = profit / workers
-    print("Прибыль в расчёте на одного сотрудника составляет: ", profit_per_worker)
+    print(f"Прибыль в расчёте на одного сотрудника составляет: {profit_per_worker:.0f}")
 elif proceeds == costs:
     print("Баланс фирмы нулевой")
 else:
