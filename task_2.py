@@ -6,7 +6,6 @@ for i in range(count_of_list):
 long_list = len(first_list)
 item_of_list = 0
 while long_list > item_of_list + 1:
-    # if long_list % 2 == 0:
     first_list[item_of_list], first_list[item_of_list + 1] = first_list[item_of_list + 1], first_list[item_of_list]
     item_of_list += 2
 print(first_list)
