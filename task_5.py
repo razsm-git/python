@@ -1,5 +1,6 @@
 class Stationery:
-    title = 'name'
+    def __init__(self, title=None):
+        self.title = title
 
     def draw(self):
         print('Запуск отрисовки')
@@ -7,12 +8,12 @@ class Stationery:
 
 class Pen(Stationery):
     def draw(self):
-        print('Отрисовка чернилами')
+        print(f'Отрисовка чернилами c помощью ручки {self.title}')
 
 
 class Pencil(Stationery):
     def draw(self):
-        print('Рисунок карандашом')
+        print(f'Рисунок карандашом фирмы {self.title}')
 
 
 class Handle(Stationery):
@@ -22,9 +23,9 @@ class Handle(Stationery):
 
 a = Stationery()
 a.draw()
-b = Pen()
+b = Pen('Parker')
 b.draw()
-c = Pencil()
+c = Pencil('Graffiti')
 c.draw()
 d = Handle()
 d.draw()
